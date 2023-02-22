@@ -4,15 +4,21 @@ import numpy.linalg as alg
 import math
 
 ## Exemple Warren
-Points=[(0,0),(1,0),(2,0),(3,0),(0.5,math.sqrt(3)/2),(1.5,math.sqrt(3)/2),(2.5,math.sqrt(3)/2)]          #liste des coordonées des points
 
-Liaisons=[(0,1),(1,2),(2,3),(0,4),(4,1),(1,5),(5,2),(2,6),(6,3),(4,5),(5,6)]       #liste des liaisons données par les positions dans Points
+#liste des coordonées des points
+Points=[(0,0),(1,0),(2,0),(3,0),(0.5,math.sqrt(3)/2),(1.5,math.sqrt(3)/2),(2.5,math.sqrt(3)/2)] 
 
-Forces_ext=[(1,[0.,-50000.]),(2,[0,-50000.]),(0,[0.,50000.]),(3,[0,50000.])]     #liste de listes des forces sur chaque point,n°du point+(array)
+#liste des liaisons données par les positions dans Points
+Liaisons=[(0,1),(1,2),(2,3),(0,4),(4,1),(1,5),(5,2),(2,6),(6,3),(4,5),(5,6)]       
 
-Bati=[0,3]           #liste contenant les points de laisons au bati
+#liste de listes des forces sur chaque point,n°du point+(array)
+Forces_ext=[(1,[0.,-50000.]),(2,[0,-50000.]),(0,[0.,50000.]),(3,[0,50000.])]     
 
-F_li=[]            #reste vide au debut, puis on ajoute la norme de la force pour la liaison entre les 2 points
+#liste contenant les points de laisons au bati
+Bati=[0,3]           
+
+#reste vide au debut, puis on ajoute la norme de la force pour la liaison entre les 2 points
+F_li=[]           
 
 ## Exemple Warren inversé
 
